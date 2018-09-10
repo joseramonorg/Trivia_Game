@@ -1,6 +1,12 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html>
+
+
+
+
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
 	<title>Trivia Game</title>
 
 	<!-- Bootstrap & ViewPort for responsiveness-->
@@ -35,42 +41,44 @@
 			</div>
 		</div>
 		<div class="row">
-			<div id="answer1Div" class="col-md-3">
-				<li id="answer1Text" class="text-center hvr-grow">Answer1</li>
+			<div id="answer1Div" class="col-md-3 ">
+				<li id="answer1Text" class="text-center btnAnswer">Answer1</li>
 			</div>
-			<div id="answer2Div" class="col-md-3">
-				<li id="answer2Text" class="text-center hvr-grow">Answer2</li>
+			<div id="answer2Div" class="col-md-3 ">
+				<li id="answer2Text" class="text-center hvr-grow btnAnswer">Answer2</li>
 			</div>
-			<div id="answer3Div" class="col-md-3">
-				<li id="answer3Text" class="text-center hvr-grow">Answer3</li>
+			<div id="answer3Div" class="col-md-3 ">
+				<li id="answer3Text" class="text-center hvr-grow btnAnswer">Answer3</li>
 			</div>
-			<div id="answer4Div" class="col-md-3">
-				<li id="answer4Text" class="text-center hvr-grow">Answer4</li>
+			<div id="answer4Div" class="col-md-3 ">
+				<li id="answer4Text" class="text-center hvr-grow btnAnswer">Answer4</li>
 			</div>
 		</div>
 	</div>
 <!-- answers-->
 
 	<div id="answerArea" class="hidden lightpadding">
+		<center>
 		<div class="row">
 			<div class="col-md-12">
-				<p id="answerCorrectIncorrect">Out of Time!</p>	
+				<h1 id="answerCorrectIncorrect">Out of Time!</h1>	
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<p id="timeRemainingTextAnswers"></p>	
+				<h1 id="timeRemainingTextAnswers"></h1>	
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<p id="correctAnswer"></p>	
+				<h1 id="correctAnswer"></h1>	
 			</div>
 		</div>
 		<div class="row">
-			<div id="image-holder" class="col-md-12">
+			<div id="image-holder" class="col-md-8">
 			</div>
-		</div>				
+		</div>	
+		</center>			
 	</div>
 
 <!-- game over -->

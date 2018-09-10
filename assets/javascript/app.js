@@ -120,7 +120,9 @@ var selectedAnswers = "not selected";
 var round = 0;
 var roundAnswersArray = ["1810-1821", "Dolores Hidalgo, Guanajuato", "Porfirio Díaz", "Josefa Ortiz de Dominguez", "Chichén Itza Pyramid"]
 // logs the pictures in the same screen
-var roundPicArray = ['../assets/images/1987.jpg', '../assets/images/bmwgroup.jpg', '../assets/images/bmwlifestyle.jpg', '../assets/images/BMWz8Bond.png', '../assets/images/redbull.jpg', '../assets/images/bmwbackground.jpg',]
+var roundPicArray = ['../assets/images/1810-1821.jpg', '../assets/images/guanajuato.jpg', '../assets/images/porfirio.jpg', '../assets/images/josefa.jpg', '../assets/images/chichen-itza.jpg',]
+
+
 var timeRemaining = 30;
 //timeouts 
 var questionNotAnswered = "";
@@ -131,7 +133,7 @@ var clockRunning = false;
 
 
 //hides the game and resets the things for next round
- {
+ newGame = function (){
     $("#gameOverArea").addClass("hidden");
     $("#pregameArea").removeClass("hidden");
     correctAnswers = 0;
@@ -197,7 +199,9 @@ onAnswer = function() {
     $("#answerArea").removeClass("hidden");
     $("#timeRemainingTextAnswers").html("Time remaining: " + timeRemaining);
     $("#correctAnswer").html("The correct answer was: " + roundAnswersArray[round - 1]);
-   
+    $("#image-holder").html("<img src='"+roundPicArray[round - 1]+"' height='300px' width='400px' />");
+
+
     //logic to determine if the answer that was selected was correct or incorrect.  also increases correct or incorrect count
     if (selectedAnswers === true) {
         $("#answerCorrectIncorrect").html("Correct!");
